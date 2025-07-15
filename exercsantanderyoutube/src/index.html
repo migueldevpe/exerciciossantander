@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
@@ -25,11 +24,44 @@
             <button id="user"></button>
         </div>
     </header>
-    <main>
-        <section id="video-content">
-            
-        </section>
-        <aside id="videos"></aside>
+    <main class="flex justify-center !pt-4">
+        <div class="flex justify-center flex-row gap-4" id="main-content">
+            <section class="w-full flex flex-col gap-3.5" id="video-content">
+                <img src="files/youtube.png" alt="">
+                <div class="flex items-start justify-between flex-col gap-3.5">
+                    <h2 class="text-[20px] font-semibold">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h2>
+                    <aside class="w-full flex items-center flex-row gap-9" id="infos">
+                        <div class="flex gap-2">
+                            <img src="files/channel.jpg" alt="">
+                            <div class="flex justify-center flex-col">
+                                <h3 class="text-[14px] font-semibold">DIO</h3>
+                                <p class="text-[14px]">83,3 mil inscritos</p>
+                            </div>
+                        </div>
+                        <div class="flex font-semibold">
+                            <button class="text-[14px]" id="sub">INSCREVA-SE</button>
+                        </div>
+                        <div class="flex font-semibold">
+                            <img src="" alt="">
+                            <p class="text-[14px]">2 mil</p>
+                        </div>
+                        <div class="flex font-semibold">
+                            <img src="" alt="">
+                            <p class="text-[14px]">Não gostei</p>
+                        </div>
+                        <div class="flex font-semibold">
+                            <img src="" alt="">
+                            <p class="text-[14px]">Compartilhar</p>
+                        </div>
+                        <div class="flex font-semibold">
+                            <img src="" alt="">
+                            <p class="text-[14px]">Download</p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <aside id="videos"></aside>
+        </div>
     </main>
 </body>
 </html>

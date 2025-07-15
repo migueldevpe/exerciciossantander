@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
+    line-height: 1rem;
 }
 
 body {
@@ -72,16 +73,34 @@ button {
     cursor: pointer;
 }
 
-main {
-
+#main-content {
+    max-width: 1200px;
 }
 
 #video-content {
     background-color: blueviolet;
     min-height: 400px;
-    width: 70%;
+    width: 900px;
+}
+
+#infos {
+    background-color: aqua;
+    width: 100%;
+}
+
+#infos div > img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+#sub {
+    background-color: #CC0000;
+    color: white;
+    padding: .75rem;
 }
 
 #videos {
     background-color: brown;
+    min-height: 300px;
+    width: 300px;
 }
