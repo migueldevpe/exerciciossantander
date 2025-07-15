@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord: 2022</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/discord-white-icon.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div id="nav-adjust">
+            <nav>
+                <a id="goback" href="#header" target="_parent" rel="referrer"><img src="files/discord-white-icon.webp" alt="Logo - NAV"></a>
+                <a href="#" target="_blank" rel="noreferrer">Login</a>
+            </nav>
+        </div>
+        <div id="header-content">
+            <div id="text-header">
+                <h1>IMAGINE A PLACE…</h1>
+                <p>…where you can belong to a school club, a gaming group, or a worldwide art community. Where you and a few friends can hang out. A place that makes it easy to talk every day and hang out more often.</p>
+            </div>
+            <aside>
+                <a href="#" target="_blank" rel="noreferrer">Download for Windows</a>
+                <a href="#" target="_blank" rel="noreferrer" id="invertbutton">Open Discord in your browser</a>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <section id="spaces">
+            <div id="spaces-content">
+                <img src="files/sec1.png" alt="Image">
+                <div class="text-section">
+                    <h1>Create an invite-only space where you feel at home</h1>
+                    <p>Discord servers are organized into topic-based channels where you can collaborate, share, or just talk about your day without cluttering a general chat.</p>
+                </div>
+            </div>
+        </section>
+        <section id="channels">
+            <div data-aos="fade-down" data-aos-delay="200" data-aos-once="true" id="channels-content">
+                <img src="files/sec2.png" alt="Image" loading="lazy">
+                <div class="text-section">
+                    <h1>Here, it’s easy to connect</h1>
+                    <p>Hop into a voice channel when you’re free. Friends in the same server can see you’re there and join instantly—no need to call.</p>
+                </div>
+            </div>
+        </section>
+        <section id="communitys">
+            <div data-aos="fade-down" data-aos-delay="600" data-aos-once="true" id="communitys-content">
+                <img src="files/sec3.png" alt="Image">
+                <div class="text-section">
+                    <h1>For a few or for many</h1>
+                    <p>Set up any community with moderation tools and custom member access. Give special powers to members, create private channels, and much more.</p>
+                </div>
+            </div>
+        </section>
+        <section id="tecs">
+            <div data-aos="fade-down" data-aos-delay="1000" data-aos-once="true" id="tecs-content">
+                <img src="files/sec4.png" alt="Image">
+                <div class="text-section">
+                    <h1>Reliable connection technology</h1>
+                    <p>Low-latency voice and video make it feel like you’re in the same room. Send a thumbs-up over video, watch friends stream their gameplay, or gather the crew to draw on a shared screen.</p> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="files/logo-footer.png" alt="Logo">
+    </footer>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('nav-adjust');
+    const triggerSection = document.getElementById('spaces');
+
+    window.addEventListener('scroll', () => {
+      const triggerTop = triggerSection.getBoundingClientRect().top;
+
+      if (triggerTop <= 80) {
+        header.classList.add('nav-color');
+      } else {
+        header.classList.remove('nav-color');
+      }
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
