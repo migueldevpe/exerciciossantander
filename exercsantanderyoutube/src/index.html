@@ -26,41 +26,112 @@
     </header>
     <main class="flex justify-center !pt-4">
         <div class="flex justify-center flex-row gap-4" id="main-content">
-            <section class="w-full flex flex-col gap-3.5" id="video-content">
+            <section class="w-full flex flex-col gap-2.5" id="video-content">
                 <img src="files/youtube.png" alt="">
-                <div class="flex items-start justify-between flex-col gap-3.5">
+                <div class="flex items-start justify-between flex-col gap-2.5">
                     <h2 class="text-[20px] font-semibold">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h2>
                     <aside class="w-full flex items-center flex-row gap-9" id="infos">
                         <div class="flex gap-2">
-                            <img src="files/channel.jpg" alt="">
+                            <img id="channel-logo" src="files/channel.jpg" alt="Logo - Canal">
                             <div class="flex justify-center flex-col">
                                 <h3 class="text-[14px] font-semibold">DIO</h3>
-                                <p class="text-[14px]">83,3 mil inscritos</p>
+                                <p class="text-[#515151] text-[14px]">122 mil inscritos</p>
                             </div>
                         </div>
                         <div class="flex font-semibold">
-                            <button class="text-[14px]" id="sub">INSCREVA-SE</button>
+                            <button class="bg-[#CC0000] text-[14px]" id="sub">INSCREVA-SE</button>
                         </div>
-                        <div class="flex font-semibold">
-                            <img src="" alt="">
+                        <div class="flex items-center font-semibold gap-1.5">
+                            <img src="files/like.png" alt="Like">
                             <p class="text-[14px]">2 mil</p>
                         </div>
-                        <div class="flex font-semibold">
-                            <img src="" alt="">
+                        <div class="flex items-center font-semibold gap-1.5">
+                            <img src="files/dislike.png" alt="Dislike">
                             <p class="text-[14px]">Não gostei</p>
                         </div>
-                        <div class="flex font-semibold">
-                            <img src="" alt="">
+                        <div class="flex items-center font-semibold gap-1.5">
+                            <img src="files/share.png" alt="Share">
                             <p class="text-[14px]">Compartilhar</p>
                         </div>
-                        <div class="flex font-semibold">
-                            <img src="" alt="">
+                        <div class="flex items-center font-semibold gap-1.5">
+                            <img src="files/download.png" alt="download">
                             <p class="text-[14px]">Download</p>
                         </div>
                     </aside>
+                    <aside class="flex gap-2">
+                        <p class="text-[14px] font-semibold">28.418 visualizações</p>
+                        <p class="text-[14px] font-semibold">Transmitido ao vivo em 23 ago. de 2022</p>
+                    </aside>
+                    <aside class="w-8/12">
+                        <p class="text-[#515151] text-[14px]">Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</p>
+                    </aside>
                 </div>
             </section>
-            <aside id="videos"></aside>
+            <aside class="flex items-center justify-center flex-col gap-1" id="videos">
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb1.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">2,1 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 2 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb2.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Scrum Talks</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">1,6 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 3 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb3.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Machine Learning Avançado - Fast Track</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">1,7 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 4 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb4.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Global Skills #2 - Project Planning</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">917 visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 5 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb5.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">2,1 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 2 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb1.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">2,1 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 2 dias</p>
+                    </div>
+                </div>
+                <div class="flex items-start justify-center flex-row gap-2" id="vid">
+                    <img src="files/thumb2.png" alt="Thumb">
+                    <div class="w-full flex items-start flex-col gap-1">
+                        <h3 class="text-[14px] font-semibold">Scrum Talks</h3>
+                        <p class="text-[#515151] text-[12px]">DigitalInnovationOne</p>
+                        <p class="text-[#515151] text-[12px]">1,6 mil visualizações</p>
+                        <p class="text-[#515151] text-[12px]">Transmitido há 3 dias</p>
+                    </div>
+                </div>
+            </aside>
         </div>
     </main>
 </body>
