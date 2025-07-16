@@ -46,7 +46,8 @@ button {
 }
 
 #search-input:focus {
-    border: 0px solid transparent;
+    border: none;
+    border-radius: 0px;
 }
 
 #search-input {
