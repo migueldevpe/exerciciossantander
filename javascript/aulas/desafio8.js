@@ -1,4 +1,4 @@
-/*sclass Carro {
+/*class Carro {
   marca;
   cor;
   gastoMedioPorKm;
