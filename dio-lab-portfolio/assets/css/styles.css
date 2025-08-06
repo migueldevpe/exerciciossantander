@@ -379,10 +379,6 @@ main {
   list-style: disc;
 }
 
-button {
-  transition: transform .3s ease-in-out;
-}
-
 .card__buttons, .description__buttons {
   display: flex;
   flex-flow: row wrap;
