@@ -17,11 +17,24 @@ toggleTheme.addEventListener("click", changeTheme);
 accordionHeaders.forEach(header => {
   header.addEventListener("click", () => {
     const accordionItem = header.parentElement;
-    const accordionActive = accordionItem.classList.contains("active");
+    const isActive = accordionItem.classList.contains("active");
 
-    accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
-  })
-})
+    // Marca que foi clicado manualmente
+    accordionItem.classList.add("user-clicked");
+
+    if (isActive) {
+      accordionItem.classList.add("closing");
+      accordionItem.classList.remove("active");
+
+      // Remove "closing" depois da animação
+      setTimeout(() => {
+        accordionItem.classList.remove("closing");
+      }, 600); // igual à duração do @keyframes
+    } else {
+      accordionItem.classList.add("active");
+    }
+  });
+});
 
 menuLinks.forEach(item => {
   item.addEventListener("click", () => {
