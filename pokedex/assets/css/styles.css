@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1rem;
+
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #f6f8fc;
+
+  min-height: 100dvh;
+  min-width: auto;
+}
+
+section {
+  min-width: 100vw;
+
+  padding: 0 .5rem;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 3rem 0;
+}
+
+#backtotop {
+  all: unset;
+
+  position: fixed;
+
+  right: 1rem;
+  bottom: 1rem;
+
+  background-color: gray;
+  color: whitesmoke;
+
+  border-radius: 9999px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  padding: .75rem;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+
+}
+
+#backtotop:hover {
+  transform: translateY(-2px);
+}
+
+#backtotop.show {
+  opacity: 1;
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+
+  padding: 2rem;
+}
+
+#loadmore {
+  background-color: blueviolet;
+  color: white;
+
+  border: none;
+  border-radius: 2rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  padding: .75rem;
+
+  transition: background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: blue;
+    transition: background-color .3s ease-in-out;
+  }
+}
+
+.modal {
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0; /* top:0, right:0, bottom:0, left:0 */
+  background: rgba(0,0,0,0.6);
+}
+
+#modal-name {
+  text-transform: capitalize;
+}
+
+#modal-number {
+  color: #00442c7f;
+}
+
+#modal-image {
+  max-width: 300px;
+  aspect-ratio: 1/1;
+}
+
+#modal-types {
+  display: flex;
+  gap: .25rem;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 1rem;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+
+/* #base-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none; 
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.25);
+
+  height: 100dvh;
+  width: 100%;
+}
+
+#modal-pokemons {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+
+  border-radius: 1rem;
+
+  padding: 1.2rem;
+} */
