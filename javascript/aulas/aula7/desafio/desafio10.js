@@ -1,4 +1,4 @@
-const { gets, print } = require('./funções-auxiliares');
+const { gets, print } = require('../funções-auxiliares');
 
 //const numerosSorteados = [];
 const quantidadeDeAlunos = gets();
